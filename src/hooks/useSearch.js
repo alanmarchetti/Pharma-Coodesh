@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-import { AuthContext } from '../provider/data';
+import { useState } from "react";
 
 export const useSearch = () => {
-    const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
-    const handleChange = (e) => {
-        const { value } = e.target;
-        setSearch(value);
-    };
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setSearch(value);
+  };
 
-    return { search, handleChange };
-}
+  return { search, handleChange };
+};

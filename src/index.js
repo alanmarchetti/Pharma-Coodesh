@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { AuthProvider } from './provider/data'
+import { UserProvider } from './provider/data'
 import Home from './templates/Home';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,9 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-      <AuthProvider>
+      <UserProvider>
         <Route exact path="/" component={Home}  />
-      </AuthProvider>
+      </UserProvider>
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,9 +1,9 @@
 .navbar {
     background-color: #FFFFFF;
 }
-.title {
+.navbar-brand  {
     color: #496AA7;
-    font-size: 25px;
+    font-size: 30px !important;
     font-weight: bold;
 }
 
