@@ -3,7 +3,7 @@
 ## Descrição do projeto
 A empresa Pharma Inc, está trabalhando em um projeto em colaboração com sua base de clientes para facilitar a gestão e visualização da informação dos seus pacientes de maneira simples e objetiva em um Dashboard onde podem listar, filtrar e expandir os dados disponíveis.
 
-Este projeto é um desafio by Coodesh [Coodesh](https://coodesh.com/);
+Este projeto é um desafio by [Coodesh](https://coodesh.com/);
 
 The company Pharma Inc, is working on a project in collaboration with its customer base to facilitate the management and visualization of information from its patients in a simple and objective way in a Dashboard where they can list, filter and expand the available data.
 
