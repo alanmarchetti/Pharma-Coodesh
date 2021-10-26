@@ -1,0 +1,25 @@
+.modal_title{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-fetch {
+    border-radius: 50%;
+}
+
+.name {
+    color: #496AA7;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.modal_span {
+    color: #020202;
+    font-weight: 700;
+}
+
+.modal_body {
+    height: 300px;
+}

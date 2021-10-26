@@ -1,0 +1,16 @@
+.table {
+    background-color: #FFFFFF;
+}
+
+thead {
+    background-color: #496AA7;
+    color: #FFFFFF;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+   line-height: 3;
+}

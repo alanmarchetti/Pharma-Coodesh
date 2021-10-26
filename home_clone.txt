@@ -1,0 +1,63 @@
+// - react
+import { useEffect, useState } from 'react';
+
+// - components
+import { NavBar } from '../../components/Navbar';
+import { TextArea } from '../../components/TextArea';
+import { TextInput } from '../../components/Input';
+import { Table } from '../../components/Table';
+
+// - hooks e services
+import { useSearch } from '../../hooks/useSearch';
+import { loadUsers } from '../../services/load.users';
+
+import './styles.css';
+
+function App() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const { search, handleChange } = useSearch();
+
+  const loadUse = async () => {
+    const datas = await loadUsers(50);
+    setUsers(datas);
+  }
+
+  useEffect(() => {
+    loadUse();
+    setLoading(false)
+  }, [])
+
+  const filteredUsers = search
+    ? users.filter((user) => {
+      return user.name.first.toLowerCase().includes(search.toLowerCase())
+    })
+    : users;
+
+  return (
+    <div className="container w-auto">
+      <NavBar text="Pharma" />
+
+      <div className="container w-75">
+
+        <TextArea
+          text={`Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Morbi suscipit arcu quis fermentum congue. Curabitur ornare finibus 
+          accumsan. Proin ultrices eros vitae nibh venenatis, et pellentesque mi lacinia. 
+          Suspendisse potenti.`}
+        />
+
+        <TextInput search={search} handleChange={handleChange} />
+
+        {loading && <h2>Carregando lista de usuários...</h2>}
+
+        {filteredUsers.length > 0 && <Table users={filteredUsers} />}
+
+        {filteredUsers.length === 0 && <p>Não existem usuários!</p>}
+
+      </div>
+    </div>
+  );
+}
+
+export default App;
