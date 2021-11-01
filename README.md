@@ -14,7 +14,7 @@ This is a front-end challenge by Coodesh.
 - Javascript
 - React.js
 - Bootstrap 
-- FecthAPI
+- Fecth
 <hr>
 
 ## Como configurar e utilziar o projeto em sua máquina
